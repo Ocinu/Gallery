@@ -1,0 +1,104 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#69def8, #f6f682);
+}
+
+.container{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin-top: 10%;
+    overflow: hidden;
+    box-shadow:10px 10px 10px gray;
+}
+
+.img_cont{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contron buttons panel */
+.buttons_cont{
+    margin-top: 2%;
+    position: relative;
+    height: 50px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.control_buttons{
+    visibility: hidden;
+    height: 90%;
+    width: 13%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px grey;
+    background-color: #b9f8fe;
+    transition: transform 0.5s;
+}
+
+.control_buttons:hover{
+    transform: scale(1.2);
+}
+
+.active{
+    visibility: visible;
+}
+
+/* Tooltips */
+.tooltip {
+    position: fixed;
+    padding: 10px 20px;
+    border: 1px solid #b3c9ce;
+    border-radius: 4px;
+    text-align: center;
+    font: italic 14px/1.3 sans-serif;
+    color: #333;
+    background: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+/* Circle */
+.circle_cont{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    height: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border: 0px solid black;
+    border-radius: 50%;
+    background-color: rgb(100, 237, 157);
+    transition: background-color 0.5s;
+}
+
+.circle:hover{
+    background-color: #e0e0e0;
+}
+
+.now{
+    background-color: black;
+}
